@@ -1,18 +1,24 @@
-import { createHashRouter, RouteObject } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
+import type { RouteObject } from 'react-router-dom'
 import Root from './root'
 import ErrorPage from './error-page'
-import Game from '../pages/game'
-import { Immer } from '../pages/immer'
+import Game from '@/pages/game'
+import { Immer } from '@/pages/immer'
+import ModalForm from '@/pages/modal-form'
 
 export const routes: RouteObject[] = [
   {
-    path: 'game',
-    element: <Game />,
-    index: true
+    path: '',
+    element: <Game />
+    // index: true
   },
   {
     path: 'immer',
     element: <Immer />
+  },
+  {
+    path: 'form',
+    element: <ModalForm />
   }
 ]
 

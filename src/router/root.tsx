@@ -13,7 +13,7 @@ export default function Root() {
           >
             <input
               id="q"
-              aria-label="Search contacts"
+              aria-label="Search"
               placeholder="Search"
               type="search"
               name="q"
@@ -28,9 +28,6 @@ export default function Root() {
               aria-live="polite"
             ></div>
           </form>
-          {/* <form method="post">
-            <button type="submit">New</button>
-          </form> */}
         </div>
         <nav>
           <ul>
